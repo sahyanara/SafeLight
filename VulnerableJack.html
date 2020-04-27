@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SafeLight</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/Educate.css">
+    <link rel="stylesheet" href="../static/Background.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Open+Sans+Condensed:300&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class='ripple'>
+          <div class='circle xxlarge shade1'></div>
+          <div class='circle xlarge shade2'></div>
+          <div class='circle large shade3'></div>
+          <div class='circle medium shade4'></div>
+          <div class='circle small shade5'></div>
+        </div>
+            <div class='info1 w3-round-xlarge w3-center'>
+                <div>
+                    <h1 class="ArchivoNarrowH2">Find what makes Jack vulnerable</h1>
+                    <h1 class="ArchivoNarrowH3">Jack lives in the nicer part of town with two older sisters. He plays football and lacrosse and does decently well in school. His father is a doctor and his mother stays at home to take care of her family. Jack has tons of friends and a girlfriend of 6 months. Jack consumes alcohol and smokes marijuana but shows no sign of addiction. Jack does struggle with depression and anxiety and takes prescription pills to deal with his mental health.</h1>
+                </div>
+
+                <h1 class = "ArchivoNarrowH3"> Select all that apply</h1>
+
+                <button type="button" id= "Trait1" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrow" style="width:33.3%" onclick="Clicked1()" >Low socio-economic status</button>
+                <button type="button" id= "Trait2" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrow" style="width:33.3%" onclick="Clicked2()" >Runaways - Parental Neglect </button>
+                <button type="button" id= "Trait3" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrow" style="width:33.3%" onclick="Clicked3()" >Homeless youth</button>
+                <button type="button" id= "Trait4" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrow" style="width:33.3%" onclick="Clicked4()" >Recent relocation</button>
+                <button type="button" id= "Trait5" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrow" style="width:33.3%" onclick="Clicked5()" >LGBTQ+</button>
+                <button type="button" id= "Trait6" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrow" style="width:33.3%" onclick="Clicked6()" >Mental Health/Insecurities</button>
+                <div></div>
+                <button type="button" id= "submit" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrow" style="width:25%" onclick="Jack()" >Submit</button>
+                <a href="VulnerableClaudia.html"><button class=" next w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrow" style="width:25%" type="button" ><b>Next</b></button></a>
+
+                <div id = "here"></div>
+
+            </div>
+
+<script>
+        var count = 0;
+        function Clicked1() {
+            document.getElementById("Trait1").className += " disabled";
+            count -= 5;
+        }
+        function Clicked2() {
+            document.getElementById("Trait2").className += " disabled";
+            count -= 5;
+        }
+        function Clicked3() {
+            document.getElementById("Trait3").className += " disabled";
+            count -= 5;
+        }
+        function Clicked4() {
+            document.getElementById("Trait4").className += " disabled";
+            count -= 5;
+        }
+        function Clicked5() {
+            document.getElementById("Trait5").className += " disabled";
+            count -= 5;
+        }
+        function Clicked6() {
+            document.getElementById("Trait6").className += " disabled";
+            count += 1;
+        }
+
+        function Jack() {
+            if (count == 1) {
+                var alert = document.createElement("div");
+                alert.className = "alert success";
+                alert.innerHTML = '<strong>Correct!</strong> ';
+                document.getElementById('here').appendChild(alert);
+            } else {
+                var alert = document.createElement("div");
+                alert.className = "alert";
+                alert.innerHTML = '<strong>Incorrect!</strong> Jack is vulnerable to Traffickers because of the state of his mental health.';
+                document.getElementById('here').appendChild(alert);
+            }
+        }
+</script>
+
+</body>
+</html>

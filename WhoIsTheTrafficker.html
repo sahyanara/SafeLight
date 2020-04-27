@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SafeLight</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/Educate.css">
+    <link rel="stylesheet" href="../static/Background.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Open+Sans+Condensed:300&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class='ripple'>
+          <div class='circle xxlarge shade1'></div>
+          <div class='circle xlarge shade2'></div>
+          <div class='circle large shade3'></div>
+          <div class='circle medium shade4'></div>
+          <div class='circle small shade5'></div>
+        </div>
+            <div class='info2 w3-round-xlarge w3-center'>
+                <div>
+                    <h1 class="ArchivoNarrowH2">Who Could Be A Trafficker?</h1>
+                    <h1 class="ArchivoNarrowH3">Select each person to see who is a trafficker:</h1>
+
+                    <div class="row">
+                        <div class="column">
+                            <h1 class="ArchivoNarrowH3B">1. Luke Smith </h1>
+                            <h1 class="ArchivoNarrowH4">    43 year old, a father of one daughter</h1>
+                            <img src="https://hairstyleonpoint.com/wp-content/uploads/2017/04/frosty-temples-hairstyles-middle-aged-men.jpg" alt="Smith" style="width:150px;height:300px;">
+                            <button type="button" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrow" style="width:49.5%" onclick="Luke()" >Luke</button>
+                        </div>
+                        <div class="column">
+                            <h1 class="ArchivoNarrowH3B">2. Sara Evans </h1>
+                            <h1 class="ArchivoNarrowH4">    35 year old, manager of a modelling agency</h1>
+                            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Evans" style="width:150px;height:300px;">
+                            <button type="button" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrow" style="width:49.5%" onclick="Sara()" >Sara</button>
+                        </div>
+                        <div class="column">
+                            <h1 class="ArchivoNarrowH3B">3. Greg Williams </h1>
+                            <h1 class="ArchivoNarrowH4">    50 year old, owns a 24/7 bar</h1>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvAg8LbxsIrVALdSiS29kuBwAiCZix4BUXfpV0Ud5h8TiluApD&usqp=CAU" alt="Williams" style="width:150px;height:300px;">
+                            <button type="button" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrow" style="width:49.5%" onclick="Greg()" >Greg</button>
+                        </div>
+                        <div class="column">
+                            <h1 class="ArchivoNarrowH3B">4. Ethan Gilbert </h1>
+                            <h1 class="ArchivoNarrowH4">    22 year old, uses tinder to build relationships</h1>
+                            <img src="https://images.unsplash.com/photo-1528900403525-dc523d4f18d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Gilbert" style="width:150px;height:300px;">
+                            <button type="button" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrow" style="width:49.5%" onclick="Ethan()" >Ethan</button>
+                        </div>
+                    </div>
+                    <div id = "here"></div>
+                </div>
+                <div>
+                    <a href="KeyTakeAway1.html"><button class=" next w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrow" style="width:32.5%" type="button" ><b>Next</b></button></a>
+                </div>
+            </div>
+    <script>
+        function Luke() {
+            var alert = document.createElement("div");
+            alert.className = "alert success";
+            alert.innerHTML = '<strong>Luke is a trafficker. </strong> He is a father of one daughter that he uses to gain more clients and lets them take advantage of her';
+            document.getElementById('here').appendChild(alert);
+        }
+
+        function Sara() {
+            var alert = document.createElement("div");
+            alert.className = "alert success";
+            alert.innerHTML = '<strong>Sara is a trafficker. </strong> She is a manager of a modelling agency, usually reaches out to people to traffick on social media after looking at many of their pictures';
+            document.getElementById('here').appendChild(alert);
+        }
+
+        function Greg() {
+            var alert = document.createElement("div");
+            alert.className = "alert success";
+            alert.innerHTML = '<strong>Greg is a trafficker. </strong> He owns a bar that is open 24/7 where he hires a lot of new waiters / waitresses to help him but mostly entertain his clients';
+            document.getElementById('here').appendChild(alert);
+        }
+
+        function Ethan() {
+            var alert = document.createElement("div");
+            alert.className = "alert success";
+            alert.innerHTML = '<strong>Ethan is a trafficker.</strong> He goes on tinder where he starts building relationships with people before coercing them into working for him';
+            document.getElementById('here').appendChild(alert);
+        }
+    </script>
+
+
+</body>
+</html>

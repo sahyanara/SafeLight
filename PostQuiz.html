@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SafeLight</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/Educate.css">
+    <link rel="stylesheet" href="../static/Background.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Open+Sans+Condensed:300&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class='ripple'>
+          <div class='circle xxlarge shade1'></div>
+          <div class='circle xlarge shade2'></div>
+          <div class='circle large shade3'></div>
+          <div class='circle medium shade4'></div>
+          <div class='circle small shade5'></div>
+        </div>
+            <div class='info3 w3-round-xlarge w3-center'>
+                <div>
+                    <h1 class="ArchivoNarrowH2">Pop Quiz!</h1>
+                    <h1 class="ArchivoNarrowH3">Select the correct answer</h1>
+
+                    <h1 class="ArchivoNarrowH3B">1.  What is the most common type of trafficker?</h1>
+                    <button type="button" id="1a" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH4" style="width:99%" onclick="Incorrect('1b','1a')" >Stalker</button>
+                    <button type="button" id="1b" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH4" style="width:99%" onclick="Correct('1b')" >Someone you know</button>
+                    <button type="button" id="1c" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH4" style="width:99%" onclick="Incorrect('1b','1c')" >Kidnapper</button>
+
+                    <h1 class="ArchivoNarrowH3B">2.  How do people tend to get trafficked?</h1>
+                    <button type="button" id="2a" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH4" style="width:99%" onclick="Correct('2a')" >Offered something they need</button>
+                    <button type="button" id="2b" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH4" style="width:99%" onclick="Incorrect('2a','2b')" >Volunteer</button>
+                    <button type="button" id="2c" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH4" style="width:99%" onclick="Incorrect('2a','2c')" >Kidnapped</button>
+
+                    <h1 class="ArchivoNarrowH3B">3.  Who is most likely to get Trafficked?</h1>
+                    <button type="button" id="3a" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH4" style="width:99%" onclick="Incorrect('3c','3a')" >Men</button>
+                    <button type="button" id="3b" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH4" style="width:99%" onclick="Incorrect('3c','3b')" >Women</button>
+                    <button type="button" id="3c" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH4" style="width:99%" onclick="Correct('3c')" >Depends on the situation</button>
+
+                    <h1 class="ArchivoNarrowH3B">4.  How are people coerced into the system?</h1>
+                    <button type="button" id="4a" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH4" style="width:99%" onclick="Incorrect('4b','4a')" >Violence</button>
+                    <button type="button" id="4b" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH4" style="width:99%" onclick="Correct('4b')" >False promises</button>
+                    <button type="button" id="4c" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH4" style="width:99%" onclick="Incorrect('4b','4c')" >Voluntary</button>
+
+                    <h1 class="ArchivoNarrowH3B">5.  What is the grooming process?</h1>
+                    <button type="button" id="5a" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH5" style="width:99%" onclick="Incorrect('5b','5a')" >Over a period of 1-2 weeks, the pimp makes the victim attractive to possible costumers.</button>
+                    <button type="button" id="5b" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH5" style="width:99%" onclick="Correct('5b')" >In 6-8 months, the trafficker promises a life to the victim that they cannot refuse.</button>
+                    <button type="button" id="5c" class="w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrowH5" style="width:99%" onclick="Incorrect('5b','5c')" >The trafficker make themselves more attractive to gain the victims trust.</button>
+
+                </div>
+                <div class = "ArchivoNarrowH4">Continue learning...</div>
+                <div>
+                    <a href="VulnerableTraits.html"><button class=" next w3-button w3-hover-black w3-indigo w3-round-Large w3-xlarge w3-padding-large mainMenuButton ArchivoNarrow" style="width:32.5%" type="button" ><b>Next</b></button></a>
+                </div>
+            </div>
+    <script>
+        function Correct(right) {
+            document.getElementById(right).classList.remove('w3-indigo');
+            document.getElementById(right).classList.remove('w3-hover-black');
+            document.getElementById(right).classList.add('green');
+        }
+
+        function Incorrect(right,wrong) {
+            document.getElementById(right).classList.remove('w3-indigo');
+            document.getElementById(right).classList.remove('w3-hover-black');
+            document.getElementById(right).classList.add('green');
+            document.getElementById(wrong).classList.remove('w3-indigo');
+            document.getElementById(wrong).classList.remove('w3-hover-black');
+            document.getElementById(wrong).classList.add('red');
+        }
+    </script>
+
+
+</body>
